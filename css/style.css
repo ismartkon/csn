@@ -137,11 +137,12 @@
     }
     
     .fl a {
-        display: block;
-        padding: 8px;
-        background: url(../img/ply.png) right center no-repeat;
-        text-decoration: none;
-        background-size: 40px 30px
+    display: block;
+    padding: 8px;
+    background: url(/img/ply.png) right center no-repeat;
+    text-decoration: none;
+    background-size: 30px 30px;
+    margin-right: 10px;
     }
     
     .fl a img {
