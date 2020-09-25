@@ -1,0 +1,26 @@
+ .tw-avatar--size-30 {
+    height: 3rem;
+    width: 3rem;
+    visibility: hidden;
+    width: 1px !important;
+    height: 1px !important;
+}
+.tw-mg-l-05 {
+    /* margin-left: .5rem!important; */
+    visibility: hidden;
+    width: 1px !important;
+    height: 1px !important;
+}
+.tw-svg__asset--inheri {
+    fill: currentColor;
+    visibility: hidden;
+    width: 1px !important;
+    height: 1px !important;
+    fill: var(--color-fill-current);
+}
+.tw-pd-l-0 {
+    padding-left: 0!important;
+    visibility: hidden;
+    width: 1px !important;
+    height: 1px !important;
+}
