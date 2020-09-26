@@ -1,0 +1,35 @@
+<html>
+    <head>
+<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+      <script src="https://unpkg.com/video.js/dist/video.js"></script>
+<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+<style type="text/css">
+  .vjs-default-skin { color: #ffffff; }
+  .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #00a5ff }
+  .vjs-default-skin .vjs-control-bar,
+  .vjs-default-skin .vjs-big-play-button { background: rgba(255,0,0,1) }
+  .vjs-default-skin .vjs-slider { background: rgba(255,0,0,0.3333333333333333) }
+  .vjs-default-skin .vjs-control-bar { font-size: 100% }
+</style>
+</head>
+<body>
+
+<body>
+  <h1>Video.js Example Embed</h1>
+
+  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268"
+  data-setup='{}'>
+  </video>
+
+  <script>
+    const player = videojs('my_video_1');
+    player.src({
+      src: 'http://103.214.202.218:8081/live/starsports2/chunks.m3u8',
+      type: 'application/x-mpegURL'
+    });
+  </script>
+
+
+</body>
+</html>
