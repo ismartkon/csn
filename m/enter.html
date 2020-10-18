@@ -7,23 +7,20 @@
 <form>
     <label for="pswd">Enter your password: </label>
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="click_me();" />
+    <input type="button" value="Submit" onclick="checkPswd();" />
 </form>
 <!--Function to check password the already set password is admin-->
-    
 <script type="text/javascript">
-
-        function click_me() {
-            var pswd=document.getElementById("pswd").value;
-
-            if (pswd == "iplt20")
-            {
-               window.location="index.html";
-            }
-else{
-            alert("Passwords do not match.");
-        }  
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
         }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
 </script>
 </body>
 </html>
