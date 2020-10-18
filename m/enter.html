@@ -6,6 +6,7 @@
   width: 100%;
   padding: 50px 0;
   text-align: center;
+  display:none;
   background-color: lightblue;
   margin-top: 20px;
 }
@@ -43,10 +44,10 @@
         <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 </script>
