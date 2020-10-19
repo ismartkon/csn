@@ -26,6 +26,7 @@ body {
   background: rgba(30, 116, 253, 0.3);
 }
 #appCapsule {
+padding:0px !important;
 border-top: 1px solid #ccc;
 border-bottom: 1px solid #ccc;}
 
