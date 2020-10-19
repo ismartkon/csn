@@ -155,6 +155,12 @@ hr {
             }
             else{
     alert("Passwords do not match.");
+  var x = document.getElementById("notifi");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
         }
   
         }
@@ -167,7 +173,7 @@ hr {
  <div class="clearfix"><center><input type="button" value="Submit" style="border: none;" class="signupbtn button" onclick="click_me()">
    <span type="button" style="border: none;" class="cancelbtn button" onclick="myFunction()">Get Password</span></center></div>
 
-       
+      <siv id="notifi">Passwords do not match.</div>
         <div id="myDIV">
             Password: iplt2020
         </div>
