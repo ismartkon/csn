@@ -741,7 +741,7 @@ button:hover, button:active, button:focus {
   padding-top: env(safe-area-inset-top);
 }
 
-.panelbox-left .listview > li,
+.panelbox-left .view > li,
 .panelbox-right .listview > li {
   padding: 10px 16px;
 }
@@ -1783,9 +1783,9 @@ a.badge-dark {
 
 .image-listview > li .item {
   padding: 10px 16px;
-  width: 100%;
-  min-height: 50px;
-  display: flex;
+    /* width: 100%; */
+    /* min-height: 50px; */
+    display: flex;
   align-items: center;
 }
 
