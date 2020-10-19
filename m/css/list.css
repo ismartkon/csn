@@ -25,6 +25,9 @@ body {
 ::selection {
   background: rgba(30, 116, 253, 0.3);
 }
+#appCapsule {
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;}
 
 a {
   transition: 0.2s all;
