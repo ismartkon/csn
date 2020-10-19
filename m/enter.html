@@ -39,8 +39,8 @@
 <form/>
         <br>
         <div onclick="myFunction()">Get Password</div>
-        <div id="myDIV" onclick="mycopy()">
-            Password: <span id="myInput" value="iplt2020">iplt2020</span>
+        <div id="myDIV" onclick="copyToClipboard('#p1')">
+            Password: <span id="p1" value="iplt2020">iplt2020</span>
         </div>
         
 <script>
@@ -55,12 +55,12 @@ function myFunction() {
 </script>
       
       <script>
-function mycopy() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
+function copyToClipboard(element) {
+  var $temp = $("<span>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
   document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+  $temp.remove();
 }
 </script>
       </center>
