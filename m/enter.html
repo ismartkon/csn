@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
 <style>
-#myDIV {
+#notifi {
+    display:none;
+    width: 50%;
+    padding: 12px 0;
+    font-family: monospace;
+    font-size: small;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: crimson;
+  }
+    #myDIV {
     display:none;
     width: 100%;
     border: 1px #FFC107 dashed;
@@ -22,7 +34,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 6px 0;
   display: inline-block;
-    text-align:center;
+    text-align:left;
   border: none;
     border-radius: 5px;
   background: #dddddd;
@@ -154,7 +166,6 @@ hr {
                window.location="index.html";
             }
             else{
-    alert("Passwords do not match.");
   var x = document.getElementById("notifi");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -166,14 +177,14 @@ hr {
         }
     </script>
 </head>
-<body>
+<body><br><div id="notifi">&#x2718; Passwords do not match.</div>
   <br><br><center><b>LOGIN TO WATCH</b></center><br>
   <center>
 <input type="password" type="password" placeholder="Enter Password" id="pw" required>
  <div class="clearfix"><center><input type="button" value="Submit" style="border: none;" class="signupbtn button" onclick="click_me()">
    <span type="button" style="border: none;" class="cancelbtn button" onclick="myFunction()">Get Password</span></center></div>
 
-      <siv id="notifi">Passwords do not match.</div>
+      
         <div id="myDIV">
             Password: iplt2020
         </div>
