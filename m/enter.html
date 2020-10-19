@@ -39,8 +39,8 @@
 <form/>
         <br>
         <div onclick="myFunction()">Get Password</div>
-        <div id="myDIV" onclick="copyToClipboard('#p1')">
-            Password: <span id="p1" value="iplt2020">iplt2020</span>
+        <div id="myDIV">
+            Password: iplt2020
         </div>
         
 <script>
@@ -51,16 +51,6 @@ function myFunction() {
   } else {
     x.style.display = "block";
   }
-}
-</script>
-      
-      <script>
-function copyToClipboard(element) {
-  var $temp = $("<span>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
 }
 </script>
       </center>
